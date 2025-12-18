@@ -51,6 +51,8 @@ for material_class in materialClasses:
 X = np.array(X)
 y = np.array(y)
 
-print("Feature extraction complete!")
+np.save("Data/X_features.npy", X)
+np.save("Data/y_labels.npy", y)
 print("X shape:", X.shape)
 print("y shape:", y.shape)
+
